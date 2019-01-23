@@ -1,5 +1,5 @@
 [BASE]
-REVISION="1548215226672"
+REVISION="1548215369672"
 GROUPID="6"
 TYPENAME="Channel"
 FULLCLASSNAME="emds.epi.impl.adapter.database.DatabaseReaderConfig"

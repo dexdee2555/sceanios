@@ -1,5 +1,5 @@
 [BASE]
-REVISION="1548215226345"
+REVISION="1548215369285"
 GROUPID="11"
 TYPENAME="ServiceInterface"
 FULLCLASSNAME="emds.epi.decl.modell.ServiceInterface"

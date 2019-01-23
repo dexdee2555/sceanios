@@ -1,5 +1,5 @@
 [BASE]
-REVISION="1548215226737"
+REVISION="1548215369737"
 GROUPID="6"
 TYPENAME="Channel"
 FULLCLASSNAME="emds.epi.impl.adapter.file.FileListenerConfig"

@@ -1,5 +1,5 @@
 [BASE]
-REVISION="1548215226789"
+REVISION="1548215369792"
 GROUPID="4"
 TYPENAME="MessageMapping"
 FULLCLASSNAME="emds.epi.decl.modell.InternalMessageMapping"

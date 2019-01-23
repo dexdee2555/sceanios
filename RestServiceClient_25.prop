@@ -1,5 +1,5 @@
 [BASE]
-REVISION="1548215226754"
+REVISION="1548215369756"
 GROUPID="18"
 TYPENAME="RestServiceClient"
 FULLCLASSNAME="emds.epi.decl.modell.RestClientConfig"
