@@ -1,0 +1,18 @@
+[BASE]
+REVISION="1548215226773"
+GROUPID="3"
+TYPENAME="MessageType"
+DESCRIPTION="Imported from database dictionary"
+FULLCLASSNAME="emds.epi.decl.modell.MessageType"
+VERSION="100"
+VERSIONING="UNVERSIONED"
+SCENARIO="e89453ef-1f05-4014-b693-2ab5ee1df92f"
+ID="54"
+SIMPLECLASSNAME="MessageType"
+NAME="import_db"
+[EXT]
+AUTO_DELETE="FALSE"
+IS_IMPORTED="FALSE"
+defaultFormat="XML"
+isBoType="true"
+desc="Imported from database dictionary"

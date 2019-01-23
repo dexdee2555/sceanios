@@ -1,0 +1,14 @@
+[BASE]
+REVISION="1548215226654"
+GROUPID="6"
+TYPENAME="Channel"
+FULLCLASSNAME="emds.epi.impl.adapter.database.DatabaseInboundConfig"
+VERSION="100"
+VERSIONING="UNVERSIONED"
+SCENARIO="e89453ef-1f05-4014-b693-2ab5ee1df92f"
+ID="45"
+SIMPLECLASSNAME="DatabaseInboundConfig"
+NAME="db listener"
+[EXT]
+AUTO_DELETE="FALSE"
+IS_IMPORTED="FALSE"

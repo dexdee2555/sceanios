@@ -1,0 +1,111 @@
+<ProcessModel id="1">
+  <name>pm</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>36</ID>
+  <revisionNumber>1548215226863</revisionNumber>
+  <groupId>5</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <isPersistent>false</isPersistent>
+  <useRecovery>false</useRecovery>
+  <isMassData>false</isMassData>
+  <isFifo>false</isFifo>
+  <isGroupedFifo>false</isGroupedFifo>
+  <ensureEventFifo>false</ensureEventFifo>
+  <priority>NORMAL</priority>
+  <priorityDerived>false</priorityDerived>
+  <logLevel>0</logLevel>
+  <deleteLog>false</deleteLog>
+  <redeployPolicy>0</redeployPolicy>
+  <volatilePoicy>0</volatilePoicy>
+  <manualRestart>false</manualRestart>
+  <processTyp>0</processTyp>
+  <clusterMode>0</clusterMode>
+  <pipelineMode>false</pipelineMode>
+  <bestEffortLimit>0</bestEffortLimit>
+  <businessKeys id="2"/>
+  <processObjects id="3">
+    <EventStart id="4">
+      <processModel reference="1"/>
+      <id>101</id>
+      <displayText>start</displayText>
+      <inAssignments id="5"/>
+      <outAssignments id="6"/>
+      <xpos>300.0</xpos>
+      <ypos>160.0</ypos>
+      <width>20.0</width>
+      <height>20.0</height>
+    </EventStart>
+    <emds.epi.decl.modell.process.ScriptTask id="7">
+      <processModel reference="1"/>
+      <id>102</id>
+      <displayText>serialize message to string</displayText>
+      <inAssignments id="8">
+        <Assignment id="9">
+          <targetPropertyName>MSG</targetPropertyName>
+          <sourceExpr id="10">
+            <expression>CURMSG</expression>
+            <implementingLanguage>Java</implementingLanguage>
+          </sourceExpr>
+        </Assignment>
+      </inAssignments>
+      <outAssignments id="11"/>
+      <xpos>420.0</xpos>
+      <ypos>150.0</ypos>
+      <width>180.0</width>
+      <height>40.0</height>
+      <intermediateEvents id="12"/>
+      <retryCount>3</retryCount>
+      <retryDelay id="13">
+        <unit>SECOND</unit>
+        <value>30</value>
+      </retryDelay>
+      <userDefined>false</userDefined>
+      <messageSizeStrategy>0</messageSizeStrategy>
+      <script>
+RESULT = MessageConverterStringBinary.messageToString( MSG,getScenarioIdentifier(), getConfiguration() ); 
+</script>
+      <imports>
+import emds.epi.impl.messagestore.scriptlet.MessageConverterStringBinary;
+</imports>
+      <parameters id="14">
+        <Property id="15">
+          <name>MSG</name>
+          <type class="ArgumentType">message</type>
+          <usagePattern>INPUT</usagePattern>
+          <description>message to convert</description>
+          <requiredOnInput>true</requiredOnInput>
+        </Property>
+        <Property id="16">
+          <name>RESULT</name>
+          <type class="SimpleType">string</type>
+          <usagePattern>OUTPUT</usagePattern>
+          <description>string representation of the message</description>
+          <requiredOnInput>true</requiredOnInput>
+        </Property>
+      </parameters>
+      <scriptID>MessageToStringSerialized</scriptID>
+      <description>converts structured message to string using a serializer</description>
+    </emds.epi.decl.modell.process.ScriptTask>
+  </processObjects>
+  <annotations id="17"/>
+  <edges id="18"/>
+  <properties id="19">
+    <Property id="20">
+      <name>CURMSG</name>
+      <type class="ArgumentType">message</type>
+      <usagePattern>INPUT</usagePattern>
+      <description>current message</description>
+      <requiredOnInput>false</requiredOnInput>
+    </Property>
+    <Property id="21">
+      <name>ERROR</name>
+      <type class="ComplexType" id="22">error</type>
+      <usagePattern>LOCAL</usagePattern>
+      <description>Error information object</description>
+      <requiredOnInput>false</requiredOnInput>
+    </Property>
+  </properties>
+  <maxElementId>102</maxElementId>
+</ProcessModel>

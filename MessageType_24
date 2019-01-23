@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:emds="http://www.emds-ag.de/namespace/" xmlns:ns1="urn:emds:csv" targetNamespace="urn:emds:csv" elementFormDefault="qualified" emds:messageFormat="CSV">
+    <xsd:element name="Baugruppen" id="e1">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="line" minOccurs="0" maxOccurs="unbounded" id="e2">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="GROUP_ID" id="e3" type="xsd:string"></xsd:element>
+                <xsd:element name="GROUP_NAME" id="e4" type="xsd:string"></xsd:element>
+                <xsd:element name="GROUP_MENGE" id="e5" type="xsd:string"></xsd:element>
+                <xsd:element name="PRODUCT_ID" id="e6" type="xsd:string"></xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>

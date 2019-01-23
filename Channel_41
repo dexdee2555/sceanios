@@ -1,0 +1,26 @@
+<emds.epi.impl.adapter.http.inbound.HttpAdapterParameterConfig id="1">
+  <name>serial</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>41</ID>
+  <revisionNumber>1548215226912</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>HTTP.Inbound.Get</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:42</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <isSynchronous>false</isSynchronous>
+  <authMethod>0</authMethod>
+  <allowSuperUser>false</allowSuperUser>
+  <checkSignersAgainstTrustStore>false</checkSignersAgainstTrustStore>
+  <allowAnonymousAccess>false</allowAnonymousAccess>
+  <checkCertificateChain>false</checkCertificateChain>
+  <checkCertificateValidity>false</checkCertificateValidity>
+  <wantStandardFormat>false</wantStandardFormat>
+  <copyComplexValuesWithoutAdditionalLevel>false</copyComplexValuesWithoutAdditionalLevel>
+</emds.epi.impl.adapter.http.inbound.HttpAdapterParameterConfig>

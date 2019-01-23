@@ -1,0 +1,26 @@
+<emds.epi.impl.adapter.database.boreader.BoDatabaseReaderConfig id="1">
+  <name>db3</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>52</ID>
+  <revisionNumber>1548215226704</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>BusinessObjects.Reader</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:53</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <parameters class="linked-list" id="4">
+    <Property id="5">
+      <name>MSG</name>
+      <type class="ArgumentType">message</type>
+      <usagePattern>OUTPUT</usagePattern>
+      <description>message from database</description>
+      <requiredOnInput>true</requiredOnInput>
+    </Property>
+  </parameters>
+</emds.epi.impl.adapter.database.boreader.BoDatabaseReaderConfig>

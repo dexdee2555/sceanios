@@ -1,0 +1,168 @@
+<emds.epi.impl.adapter.database.DatabaseInboundConfig id="1">
+  <name>db listener</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>45</ID>
+  <revisionNumber>1548215226654</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>Database.Inbound</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:46</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <databaseReference id="4">e89453ef-1f05-4014-b693-2ab5ee1df92f:EnvironmentEntry:34</databaseReference>
+  <messageDefinition id="5">
+    <tableDefs id="6">
+      <emds.epi.impl.adapter.database.TableDefinition id="7">
+        <elementName>orc_business_calendar</elementName>
+        <tableName>orc_business_calendar</tableName>
+        <childTables id="8">
+          <emds.epi.impl.adapter.database.TableDefinition id="9">
+            <elementName>orc_business_calendar_entry</elementName>
+            <tableName>orc_business_calendar_entry</tableName>
+            <childTables id="10"/>
+            <columns id="11">
+              <emds.epi.impl.adapter.database.ColumnDefinition id="12">
+                <attributeName>BCE_ID</attributeName>
+                <columnName>BCE_ID</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="13">
+                <attributeName>BCE_TYPE</attributeName>
+                <columnName>BCE_TYPE</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="14">
+                <attributeName>BCE_NAME</attributeName>
+                <columnName>BCE_NAME</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="15">
+                <attributeName>BCE_DESCRIPTION</attributeName>
+                <columnName>BCE_DESCRIPTION</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="16">
+                <attributeName>BCE_FIXEDDAY</attributeName>
+                <columnName>BCE_FIXEDDAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="17">
+                <attributeName>BCE_START_DAY</attributeName>
+                <columnName>BCE_START_DAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="18">
+                <attributeName>BCE_END_DAY</attributeName>
+                <columnName>BCE_END_DAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="19">
+                <attributeName>BCE_OFFSET</attributeName>
+                <columnName>BCE_OFFSET</columnName>
+                <columnType>long</columnType>
+                <dbTypeName>INT</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="20">
+                <attributeName>BCE_TIMESPAN_TYPE</attributeName>
+                <columnName>BCE_TIMESPAN_TYPE</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="21">
+                <attributeName>BCE_TIMESPAN_VALUE</attributeName>
+                <columnName>BCE_TIMESPAN_VALUE</columnName>
+                <columnType>long</columnType>
+                <dbTypeName>INT</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="22">
+                <attributeName>BCAL</attributeName>
+                <columnName>BCAL</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+            </columns>
+            <foreignKey id="23"/>
+            <keyDefinitions id="24">
+              <entry>
+                <string>PRIMARY</string>
+                <emds.epi.impl.adapter.database.TableKey id="25">
+                  <keyName>PRIMARY</keyName>
+                  <columns id="26">
+                    <string>BCE_ID</string>
+                  </columns>
+                </emds.epi.impl.adapter.database.TableKey>
+              </entry>
+            </keyDefinitions>
+          </emds.epi.impl.adapter.database.TableDefinition>
+        </childTables>
+        <columns id="27">
+          <emds.epi.impl.adapter.database.ColumnDefinition id="28">
+            <attributeName>BCAL_ID</attributeName>
+            <columnName>BCAL_ID</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+          <emds.epi.impl.adapter.database.ColumnDefinition id="29">
+            <attributeName>BCAL_NAME</attributeName>
+            <columnName>BCAL_NAME</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+          <emds.epi.impl.adapter.database.ColumnDefinition id="30">
+            <attributeName>BCAL_DESC</attributeName>
+            <columnName>BCAL_DESC</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+        </columns>
+        <foreignKey id="31"/>
+        <wherePart></wherePart>
+        <keyDefinitions id="32">
+          <entry>
+            <string>PRIMARY</string>
+            <emds.epi.impl.adapter.database.TableKey id="33">
+              <keyName>PRIMARY</keyName>
+              <columns id="34">
+                <string>BCAL_ID</string>
+              </columns>
+            </emds.epi.impl.adapter.database.TableKey>
+          </entry>
+        </keyDefinitions>
+      </emds.epi.impl.adapter.database.TableDefinition>
+    </tableDefs>
+    <messageReference id="35">e89453ef-1f05-4014-b693-2ab5ee1df92f:MessageType:47</messageReference>
+    <messageName id="36">
+      <namespaceURI></namespaceURI>
+      <localPart>rfer</localPart>
+      <prefix></prefix>
+    </messageName>
+  </messageDefinition>
+  <rootTable>orc_business_calendar</rootTable>
+  <primaryKeys id="37"/>
+  <deleteAction>false</deleteAction>
+  <updateAction></updateAction>
+  <threshold>0</threshold>
+  <timing class="emds.epi.decl.server.timer.PeriodicallyTimer" id="38">
+    <description>PeriodicallyTiming</description>
+    <preserveEvents>false</preserveEvents>
+    <dayMask>255</dayMask>
+    <repeatCount>-1</repeatCount>
+    <repeatInterval id="39">
+      <unit>SECOND</unit>
+      <value>10</value>
+    </repeatInterval>
+  </timing>
+  <fetchAll>false</fetchAll>
+</emds.epi.impl.adapter.database.DatabaseInboundConfig>

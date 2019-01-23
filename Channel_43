@@ -1,0 +1,170 @@
+<emds.epi.impl.adapter.database.DatabaseReaderConfig id="1">
+  <name>db reader</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>43</ID>
+  <revisionNumber>1548215226672</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>Database.Reader</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:44</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <databaseReference id="4">e89453ef-1f05-4014-b693-2ab5ee1df92f:EnvironmentEntry:34</databaseReference>
+  <messageDefinition id="5">
+    <tableDefs id="6">
+      <emds.epi.impl.adapter.database.TableDefinition id="7">
+        <elementName>orc_business_calendar</elementName>
+        <tableName>orc_business_calendar</tableName>
+        <childTables id="8">
+          <emds.epi.impl.adapter.database.TableDefinition id="9">
+            <elementName>orc_business_calendar_entry</elementName>
+            <tableName>orc_business_calendar_entry</tableName>
+            <childTables id="10"/>
+            <columns id="11">
+              <emds.epi.impl.adapter.database.ColumnDefinition id="12">
+                <attributeName>BCE_ID</attributeName>
+                <columnName>BCE_ID</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="13">
+                <attributeName>BCE_TYPE</attributeName>
+                <columnName>BCE_TYPE</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="14">
+                <attributeName>BCE_NAME</attributeName>
+                <columnName>BCE_NAME</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="15">
+                <attributeName>BCE_DESCRIPTION</attributeName>
+                <columnName>BCE_DESCRIPTION</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="16">
+                <attributeName>BCE_FIXEDDAY</attributeName>
+                <columnName>BCE_FIXEDDAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="17">
+                <attributeName>BCE_START_DAY</attributeName>
+                <columnName>BCE_START_DAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="18">
+                <attributeName>BCE_END_DAY</attributeName>
+                <columnName>BCE_END_DAY</columnName>
+                <columnType>dateTime</columnType>
+                <dbTypeName>DATETIME</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="19">
+                <attributeName>BCE_OFFSET</attributeName>
+                <columnName>BCE_OFFSET</columnName>
+                <columnType>long</columnType>
+                <dbTypeName>INT</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="20">
+                <attributeName>BCE_TIMESPAN_TYPE</attributeName>
+                <columnName>BCE_TIMESPAN_TYPE</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="21">
+                <attributeName>BCE_TIMESPAN_VALUE</attributeName>
+                <columnName>BCE_TIMESPAN_VALUE</columnName>
+                <columnType>long</columnType>
+                <dbTypeName>INT</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+              <emds.epi.impl.adapter.database.ColumnDefinition id="22">
+                <attributeName>BCAL</attributeName>
+                <columnName>BCAL</columnName>
+                <columnType>string</columnType>
+                <dbTypeName>VARCHAR</dbTypeName>
+              </emds.epi.impl.adapter.database.ColumnDefinition>
+            </columns>
+            <foreignKey id="23"/>
+            <keyDefinitions id="24">
+              <entry>
+                <string>DefaultKey1</string>
+                <emds.epi.impl.adapter.database.TableKey id="25">
+                  <keyName>DefaultKey1</keyName>
+                  <columns id="26">
+                    <string>BCE_FIXEDDAY</string>
+                  </columns>
+                </emds.epi.impl.adapter.database.TableKey>
+              </entry>
+              <entry>
+                <string>DefaultKey</string>
+                <emds.epi.impl.adapter.database.TableKey id="27">
+                  <keyName>DefaultKey</keyName>
+                  <columns id="28">
+                    <string>BCAL</string>
+                  </columns>
+                </emds.epi.impl.adapter.database.TableKey>
+              </entry>
+              <entry>
+                <string>DefaultKey2</string>
+                <emds.epi.impl.adapter.database.TableKey id="29">
+                  <keyName>DefaultKey2</keyName>
+                  <columns id="30">
+                    <string>BCE_ID</string>
+                  </columns>
+                </emds.epi.impl.adapter.database.TableKey>
+              </entry>
+            </keyDefinitions>
+          </emds.epi.impl.adapter.database.TableDefinition>
+        </childTables>
+        <columns id="31">
+          <emds.epi.impl.adapter.database.ColumnDefinition id="32">
+            <attributeName>BCAL_ID</attributeName>
+            <columnName>BCAL_ID</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+          <emds.epi.impl.adapter.database.ColumnDefinition id="33">
+            <attributeName>BCAL_NAME</attributeName>
+            <columnName>BCAL_NAME</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+          <emds.epi.impl.adapter.database.ColumnDefinition id="34">
+            <attributeName>BCAL_DESC</attributeName>
+            <columnName>BCAL_DESC</columnName>
+            <columnType>string</columnType>
+            <dbTypeName>VARCHAR</dbTypeName>
+          </emds.epi.impl.adapter.database.ColumnDefinition>
+        </columns>
+        <foreignKey id="35"/>
+        <wherePart></wherePart>
+        <keyDefinitions id="36"/>
+      </emds.epi.impl.adapter.database.TableDefinition>
+    </tableDefs>
+    <messageReference id="37">e89453ef-1f05-4014-b693-2ab5ee1df92f:MessageType:35</messageReference>
+    <messageName id="38">
+      <namespaceURI></namespaceURI>
+      <localPart>db_ok</localPart>
+      <prefix></prefix>
+    </messageName>
+  </messageDefinition>
+  <rootTable>orc_business_calendar</rootTable>
+  <parameters class="linked-list" id="39">
+    <Property id="40">
+      <name>MSG</name>
+      <type class="ArgumentType">message</type>
+      <usagePattern>OUTPUT</usagePattern>
+      <description>message from database</description>
+      <requiredOnInput>true</requiredOnInput>
+    </Property>
+  </parameters>
+</emds.epi.impl.adapter.database.DatabaseReaderConfig>

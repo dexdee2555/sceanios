@@ -1,0 +1,28 @@
+<emds.epi.impl.adapter.database.BlobReaderConfig id="1">
+  <name>db</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>48</ID>
+  <revisionNumber>1548215226637</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>Database.BLOB.Reader</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:49</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <inboundSteps id="4"/>
+  <outboundSteps id="5"/>
+  <parameters class="linked-list" id="6">
+    <Property id="7">
+      <name>MSGLIST</name>
+      <type class="ComplexType" id="8">messagelist</type>
+      <usagePattern>OUTPUT</usagePattern>
+      <description>messages from database</description>
+      <requiredOnInput>false</requiredOnInput>
+    </Property>
+  </parameters>
+</emds.epi.impl.adapter.database.BlobReaderConfig>

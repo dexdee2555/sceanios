@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:emds="http://www.emds-ag.de/namespace/" elementFormDefault="unqualified">
+    <xsd:element name="import_db" id="e1">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="orc_event_error_context" minOccurs="0" maxOccurs="unbounded" id="e2">
+            <xsd:annotation>
+              <xsd:appinfo source="emdsorch:tablename">orc_event_error_context</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="ERC_ID" id="e3">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_ID</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">BIGINT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:long">
+                      <xsd:totalDigits value="19"></xsd:totalDigits>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_EXC_TYPE" minOccurs="0" id="e4">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_EXC_TYPE</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_ACTION" minOccurs="0" id="e5">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_ACTION</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_MESSAGE" minOccurs="0" id="e6">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_MESSAGE</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_CLASSNAME" minOccurs="0" id="e7">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_CLASSNAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_METHOD" minOccurs="0" id="e8">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_METHOD</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_FILE" minOccurs="0" id="e9">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_FILE</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_LINE" minOccurs="0" id="e10">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_LINE</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">BIGINT</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:long">
+                      <xsd:totalDigits value="19"></xsd:totalDigits>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ERC_STACK" minOccurs="0" id="e11">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ERC_STACK</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="1536"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="orc_channel" minOccurs="0" maxOccurs="unbounded" id="e12">
+            <xsd:annotation>
+              <xsd:appinfo source="emdsorch:tablename">orc_channel</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="CHA_SCENARIO" minOccurs="0" id="e13">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">CHA_SCENARIO</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="CHA_NAME" minOccurs="0" id="e14">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">CHA_NAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="CHA_DATA" minOccurs="0" id="e15" type="xsd:base64Binary">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">CHA_DATA</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">LONGBLOB</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CHA_DEPLOYED_AT" minOccurs="0" id="e16" type="xsd:dateTime">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">CHA_DEPLOYED_AT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">TIMESTAMP</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CHA_UNIQUE_NAME" id="e17">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">CHA_UNIQUE_NAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="orc_hc_resultlist" minOccurs="0" maxOccurs="unbounded" id="e18">
+            <xsd:annotation>
+              <xsd:appinfo source="emdsorch:tablename">orc_hc_resultlist</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="HC_ID" id="e19">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">HC_ID</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">INT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:long">
+                      <xsd:totalDigits value="10"></xsd:totalDigits>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="EX_ID" id="e20">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">EX_ID</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">INT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:long">
+                      <xsd:totalDigits value="10"></xsd:totalDigits>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="STARTTIME" minOccurs="0" id="e21" type="xsd:dateTime">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">STARTTIME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">DATETIME</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ENDTIME" minOccurs="0" id="e22" type="xsd:dateTime">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">ENDTIME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">DATETIME</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="RESULT" minOccurs="0" id="e23" type="xsd:base64Binary">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">RESULT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">LONGBLOB</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="orc_message_mapping" minOccurs="0" maxOccurs="unbounded" id="e24">
+            <xsd:annotation>
+              <xsd:appinfo source="emdsorch:tablename">orc_message_mapping</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="MMA_SCENARIO" minOccurs="0" id="e25">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">MMA_SCENARIO</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="MMA_NAME" minOccurs="0" id="e26">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">MMA_NAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="MMA_DATA" minOccurs="0" id="e27" type="xsd:base64Binary">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">MMA_DATA</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">LONGBLOB</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MMA_DEPLOYED_AT" minOccurs="0" id="e28" type="xsd:dateTime">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">MMA_DEPLOYED_AT</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">TIMESTAMP</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MMA_UNIQUE_NAME" id="e29">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">MMA_UNIQUE_NAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:key name="PRIMARY" id="k30">
+        <xsd:selector xpath="orc_event_error_context"></xsd:selector>
+        <xsd:field xpath="ERC_ID"></xsd:field>
+      </xsd:key>
+      <xsd:key name="PRIMARY" id="k31">
+        <xsd:selector xpath="orc_channel"></xsd:selector>
+        <xsd:field xpath="CHA_UNIQUE_NAME"></xsd:field>
+      </xsd:key>
+      <xsd:key name="UIDX_ORC_CHANNEL" id="k32">
+        <xsd:selector xpath="orc_channel"></xsd:selector>
+        <xsd:field xpath="CHA_SCENARIO"></xsd:field>
+        <xsd:field xpath="CHA_NAME"></xsd:field>
+      </xsd:key>
+      <xsd:key name="PRIMARY" id="k33">
+        <xsd:selector xpath="orc_hc_resultlist"></xsd:selector>
+        <xsd:field xpath="HC_ID"></xsd:field>
+        <xsd:field xpath="EX_ID"></xsd:field>
+      </xsd:key>
+      <xsd:key name="PRIMARY" id="k34">
+        <xsd:selector xpath="orc_message_mapping"></xsd:selector>
+        <xsd:field xpath="MMA_UNIQUE_NAME"></xsd:field>
+      </xsd:key>
+      <xsd:key name="UIDX_ORC_MESSAGE_MAPPING" id="k35">
+        <xsd:selector xpath="orc_message_mapping"></xsd:selector>
+        <xsd:field xpath="MMA_NAME"></xsd:field>
+        <xsd:field xpath="MMA_SCENARIO"></xsd:field>
+      </xsd:key>
+    </xsd:element>
+  </xsd:schema>

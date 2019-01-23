@@ -1,0 +1,18 @@
+<emds.epi.impl.adapter.database.DatabaseOutboundConfig id="1">
+  <name>db2</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>50</ID>
+  <revisionNumber>1548215226688</revisionNumber>
+  <groupId>6</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <channelTypeName>Database.Outbound</channelTypeName>
+  <numberOfInstances>1</numberOfInstances>
+  <defaultOperation id="2">e89453ef-1f05-4014-b693-2ab5ee1df92f:ServiceInterface:51</defaultOperation>
+  <interfaceOperations id="3">
+    <emds.epi.decl.modell.Reference reference="2"/>
+  </interfaceOperations>
+  <isJunoChannel>false</isJunoChannel>
+  <preProcessorMode>false</preProcessorMode>
+</emds.epi.impl.adapter.database.DatabaseOutboundConfig>

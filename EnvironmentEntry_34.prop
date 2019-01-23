@@ -1,0 +1,14 @@
+[BASE]
+REVISION="1548215226843"
+GROUPID="9"
+TYPENAME="EnvironmentEntry"
+FULLCLASSNAME="emds.epi.decl.server.landscape.entries.DatabaseEnvironmentEntry"
+VERSION="100"
+VERSIONING="UNVERSIONED"
+SCENARIO="e89453ef-1f05-4014-b693-2ab5ee1df92f"
+ID="34"
+SIMPLECLASSNAME="DatabaseEnvironmentEntry"
+NAME="orc"
+[EXT]
+AUTO_DELETE="FALSE"
+IS_IMPORTED="FALSE"

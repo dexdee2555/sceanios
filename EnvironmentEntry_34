@@ -1,0 +1,46 @@
+<emds.epi.decl.server.landscape.entries.DatabaseEnvironmentEntry id="1">
+  <name>orc</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>34</ID>
+  <revisionNumber>1548215226843</revisionNumber>
+  <groupId>9</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <entryTypeName>database connection</entryTypeName>
+  <isOriginal>true</isOriginal>
+  <useRuntimeLink>false</useRuntimeLink>
+  <jdbcurl>jdbc:mysql://127.0.0.1:3306/orc</jdbcurl>
+  <jdbcdriver>com.mysql.jdbc.Driver</jdbcdriver>
+  <user>ORCHESTRA</user>
+  <encryptedPwd>0008484d4646554f49540006746d7770796600000010768fde192c962b097039711b27ba7d17</encryptedPwd>
+  <schema></schema>
+  <xadriver>emds.driver.jdbc.XAMySQLDataSourceFactory</xadriver>
+  <driverScopeScenario>false</driverScopeScenario>
+  <additionProperties id="2">
+    <entry>
+      <string>c3p0.acquireRetryAttempts</string>
+      <string>30</string>
+    </entry>
+    <entry>
+      <string>c3p0.acquireRetryDelay</string>
+      <string>1000</string>
+    </entry>
+    <entry>
+      <string>emds.xapool.size</string>
+      <string>10</string>
+    </entry>
+    <entry>
+      <string>c3p0.acquireIncrement</string>
+      <string>3</string>
+    </entry>
+    <entry>
+      <string>emds.xapool.idletime</string>
+      <string>10</string>
+    </entry>
+  </additionProperties>
+  <loginTimeout id="3">
+    <unit>SECOND</unit>
+    <value>0</value>
+  </loginTimeout>
+</emds.epi.decl.server.landscape.entries.DatabaseEnvironmentEntry>

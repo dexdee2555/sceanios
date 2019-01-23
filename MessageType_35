@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:emds="http://www.emds-ag.de/namespace/" elementFormDefault="unqualified" emds:messageFormat="CSV">
+    <xsd:element name="db_ok" id="e1">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="orc_business_calendar" minOccurs="0" maxOccurs="unbounded" id="e2">
+            <xsd:annotation>
+              <xsd:appinfo source="emdsorch:tablename">orc_business_calendar</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="BCAL_ID" id="e3">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">BCAL_ID</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="BCAL_NAME" minOccurs="0" id="e4">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">BCAL_NAME</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="BCAL_DESC" minOccurs="0" id="e5">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:columnname">BCAL_DESC</xsd:appinfo>
+                    <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="255"></xsd:maxLength>
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="orc_business_calendar_entry" minOccurs="0" maxOccurs="unbounded" id="e6">
+                  <xsd:annotation>
+                    <xsd:appinfo source="emdsorch:tablename">orc_business_calendar_entry</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="BCE_ID" id="e7">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_ID</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:usage">insertOnly</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="255"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_TYPE" id="e8">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_TYPE</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="100"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_NAME" minOccurs="0" id="e9">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_NAME</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="255"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_DESCRIPTION" minOccurs="0" id="e10">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_DESCRIPTION</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="255"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_FIXEDDAY" minOccurs="0" id="e11" type="xsd:dateTime">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_FIXEDDAY</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">DATETIME</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="BCE_START_DAY" minOccurs="0" id="e12" type="xsd:dateTime">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_START_DAY</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">DATETIME</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="BCE_END_DAY" minOccurs="0" id="e13" type="xsd:dateTime">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_END_DAY</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">DATETIME</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="BCE_OFFSET" minOccurs="0" id="e14">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_OFFSET</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">INT</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:long">
+                            <xsd:totalDigits value="10"></xsd:totalDigits>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_TIMESPAN_TYPE" minOccurs="0" id="e15">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_TIMESPAN_TYPE</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="32"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCE_TIMESPAN_VALUE" minOccurs="0" id="e16">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCE_TIMESPAN_VALUE</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">INT</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:long">
+                            <xsd:totalDigits value="10"></xsd:totalDigits>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                      <xsd:element name="BCAL" id="e17">
+                        <xsd:annotation>
+                          <xsd:appinfo source="emdsorch:columnname">BCAL</xsd:appinfo>
+                          <xsd:appinfo source="emdsorch:dbtypename">VARCHAR</xsd:appinfo>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                          <xsd:restriction base="xsd:string">
+                            <xsd:maxLength value="255"></xsd:maxLength>
+                          </xsd:restriction>
+                        </xsd:simpleType>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:key name="DefaultKey" id="k18">
+        <xsd:selector xpath="orc_business_calendar/orc_business_calendar_entry"></xsd:selector>
+        <xsd:field xpath="BCAL"></xsd:field>
+      </xsd:key>
+      <xsd:key name="DefaultKey1" id="k19">
+        <xsd:selector xpath="orc_business_calendar/orc_business_calendar_entry"></xsd:selector>
+        <xsd:field xpath="BCE_FIXEDDAY"></xsd:field>
+      </xsd:key>
+      <xsd:key name="DefaultKey2" id="k20">
+        <xsd:selector xpath="orc_business_calendar/orc_business_calendar_entry"></xsd:selector>
+        <xsd:field xpath="BCE_ID"></xsd:field>
+      </xsd:key>
+    </xsd:element>
+  </xsd:schema>

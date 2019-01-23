@@ -1,0 +1,88 @@
+<emds.epi.decl.modell.RestClientConfig id="1">
+  <name>fff</name>
+  <description></description>
+  <processSenarioID>e89453ef-1f05-4014-b693-2ab5ee1df92f</processSenarioID>
+  <ID>25</ID>
+  <revisionNumber>1548215226754</revisionNumber>
+  <groupId>18</groupId>
+  <autoDeleteFlag>false</autoDeleteFlag>
+  <importRevision>0</importRevision>
+  <resources id="2">
+    <base>/Test</base>
+    <overwriteBasePath>false</overwriteBasePath>
+    <resources id="3">
+      <emds.epi.decl.modell.wadl.Resource id="4">
+        <path>/Entity/{ident}</path>
+        <parameters id="5">
+          <emds.epi.decl.modell.wadl.Parameter id="6">
+            <name>ident</name>
+            <style>template</style>
+            <typename>string</typename>
+            <required>true</required>
+            <repeating>false</repeating>
+            <allowedValues id="7"/>
+          </emds.epi.decl.modell.wadl.Parameter>
+        </parameters>
+        <methods id="8">
+          <emds.epi.decl.modell.wadl.ClientMethod id="9">
+            <name>POST</name>
+            <request id="10">
+              <representations id="11">
+                <emds.epi.decl.modell.wadl.Representation id="12">
+                  <mediaType>text/xml</mediaType>
+                  <parameters id="13"/>
+                </emds.epi.decl.modell.wadl.Representation>
+              </representations>
+              <parameters id="14">
+                <emds.epi.decl.modell.wadl.Parameter id="15">
+                  <name>Content-Length</name>
+                  <style>header</style>
+                  <typename>int</typename>
+                  <required>false</required>
+                  <repeating>false</repeating>
+                  <allowedValues id="16"/>
+                </emds.epi.decl.modell.wadl.Parameter>
+                <emds.epi.decl.modell.wadl.Parameter id="17">
+                  <name>Content-Type</name>
+                  <style>header</style>
+                  <typename>string</typename>
+                  <required>true</required>
+                  <repeating>false</repeating>
+                  <allowedValues id="18"/>
+                </emds.epi.decl.modell.wadl.Parameter>
+              </parameters>
+              <dynamicQueryParameters>false</dynamicQueryParameters>
+            </request>
+            <responses id="19">
+              <emds.epi.decl.modell.wadl.Response id="20">
+                <representations id="21">
+                  <emds.epi.decl.modell.wadl.Representation id="22">
+                    <mediaType>text/xml</mediaType>
+                    <parameters id="23"/>
+                  </emds.epi.decl.modell.wadl.Representation>
+                </representations>
+                <parameters id="24"/>
+              </emds.epi.decl.modell.wadl.Response>
+            </responses>
+          </emds.epi.decl.modell.wadl.ClientMethod>
+          <emds.epi.decl.modell.wadl.ClientMethod id="25">
+            <name>PUT</name>
+            <request id="26">
+              <representations id="27">
+                <emds.epi.decl.modell.wadl.Representation id="28">
+                  <mediaType>text/xml</mediaType>
+                  <parameters id="29"/>
+                </emds.epi.decl.modell.wadl.Representation>
+              </representations>
+              <parameters id="30"/>
+              <dynamicQueryParameters>false</dynamicQueryParameters>
+            </request>
+            <responses id="31"/>
+          </emds.epi.decl.modell.wadl.ClientMethod>
+        </methods>
+        <subResources id="32"/>
+      </emds.epi.decl.modell.wadl.Resource>
+    </resources>
+  </resources>
+  <methodInterfaces id="33"/>
+</emds.epi.decl.modell.RestClientConfig>
